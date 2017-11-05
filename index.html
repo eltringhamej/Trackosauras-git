@@ -1,0 +1,226 @@
+ <style>
+
+html, body {
+               
+    background-color: mediumpurple;}
+        
+      
+
+
+
+@font-face { /* declare fonts */
+	font-family: "MuseoLight";
+	src: url("fonts/Museo300-Regular.eot");
+	src: local("Museo 300"), local("Museo-300"),
+		url("fonts/Museo300-Regular.woff") format("woff"),
+		url("fonts/Museo300-Regular.otf") format("opentype"),
+		url("fonts/Museo300-Regular.svg#Museo-300") format("svg");
+		}
+		/* display fonts */
+		h1 { font: 16px/1 MuseoLight, Verdana, sans-serif; }
+		h2 { font: 18px/1 MuseoLight, Verdana, sans-serif; font-weight: 300; color: white; }
+		p { font: 14px/1 MuseoLight, Verdana, sans-serif; color: white;           font-weight: 100;  width: 300px;  line-height: 120%;}
+    
+     
+     
+     
+     #parent {
+    width:500px;
+    height:600px;
+     top:15%; 
+    left:38%; 
+    position:fixed;
+       
+}
+     
+     
+   .face {
+    position:absolute; 
+    top:2%; 
+    left:70%; 
+    width:50;
+    height:43px;
+   }
+    
+     
+    
+
+  
+.speechbubble {
+  padding:10px;
+  margin:5px;
+ margin-bottom: 10px;
+ position: absolute;
+  color:#333;
+  background:#fff;
+width:200px; 
+ border-radius: 5px;
+top:-10%; 
+ left:20%;
+    display:none;
+}
+     
+     #bubble2{
+  top:2.5%;
+     }
+     
+     #bubble3{
+   top:15%;
+       }
+     
+     #bubble4{
+    left:-25%; 
+    top:30%; 
+    width:420px; 
+    height:350px; "
+     }
+     
+    
+    
+   @media only screen and (max-width: 768px) {
+    
+    
+       .face {
+    width:50px;
+    height:43px;
+    top:-5%; 
+     left:30%;
+   }
+ 
+.speechbubble {
+top:-10%; 
+ left:-20%;
+    
+}
+         #bubble2{
+  top:5%;
+     }
+     
+      #bubble3{
+   top:20%;
+       }
+       
+        #bubble4{
+    left:-25%; 
+    top:40%; 
+    width:330px; 
+    height:250px; "
+     }
+     }
+    
+    
+
+</style>
+
+ <meta name="viewport" content="width=device-width" /> 
+
+<div id = "parent">     
+    
+<img class ="face" src="https://github.com/eltringhamej/Trackosauras-git/blob/master/trackosauras%20ori.png?raw=true"
+alt="Trackosaurus">
+ 
+
+
+<h1 id = "bubble1" class = "speechbubble" >
+Hey I'm Trackosaurus 
+</h1>
+
+<h1 id = "bubble2" class = "speechbubble" >
+    
+Tell me what you want
+</h1>
+
+<h1 id = "bubble3" class = "speechbubble" >
+    I'll tell you when it happens
+</h1>
+
+    <img id = "bubble4" class ="speechbubble" src="https://github.com/eltringhamej/Trackosauras-git/blob/master/Trackosauras-ship.1.gif?raw=true"
+alt="Trackosaurus" >  
+    
+</div>   
+
+    
+
+ <script>
+  window.productHuntUpcoming = {
+    appId: 1532,
+    position: 'bottomLeft',
+      width:1000
+  };
+
+  (function(doc, scr, src, a, b) {
+    a = doc.createElement(scr);
+    b = doc.getElementsByTagName(scr)[0];
+    a.async = true;
+    a.src = src;
+    b.parentNode.insertBefore(a, b);
+  })(document, 'script', 'https://assets.producthunt.com/assets/upwigloader.js');
+</script>
+        
+     
+
+<body >
+ 
+        
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+   
+    <script>
+        
+        
+  
+        $(document).ready(function(){
+             
+              $("#bubble1").delay("slow").fadeIn();
+    //bubble fades in
+ 
+  
+         
+         setTimeout(
+  function() 
+  { $('.face').animate({
+        'marginTop' : "+=15%" //moves down
+        });
+   $("#bubble2").delay("slow").fadeIn();
+    //bubble fades in
+  }, 2000);
+  
+  setTimeout(
+  function() 
+  { $('.face').animate({
+        'marginTop' : "+=20%" //moves down
+        });
+    $("#bubble3").delay("slow").fadeIn();
+    //bubble fades in
+  }, 4000);
+             
+             setTimeout(
+  function() 
+  { $('.face').animate({
+        'marginTop' : "+=65%" //moves down
+        });
+    $("#bubble4").delay("slow").fadeIn();
+    //bubble fades in
+  }, 6000);
+   
+   
+    });
+        
+        
+        
+</script>
+    
+    
+    
+    
+    
+    
+
+    </body>
+    
+
+
+
+
+
+
