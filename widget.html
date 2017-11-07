@@ -1,0 +1,247 @@
+<style>
+
+html, body {
+               
+    background-color: white;}
+        
+      
+
+
+
+h1 {
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 300;
+	line-height: 12.4px;
+    color: dimgray;
+   
+}
+    
+    h2 {
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font-size: 6px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 300;
+	line-height: 5.4px;
+    
+   
+}
+     
+     
+     
+     #parent {
+    width:300px;
+    height:400px;
+     top:70%; 
+    left:70%; 
+    position:fixed;
+   
+    
+       
+}
+     
+     
+       
+
+    
+    
+   .face {
+    position:absolute; 
+    top:30%; 
+    left:90%; 
+    width:50;
+    height:43px;
+   }
+    
+     
+    
+
+  
+.speechbubble {
+  padding:10px;
+    padding-right: 10px;
+  margin:3px;
+ margin-bottom: 10px;
+ position: absolute;
+  color:#fff;
+  background:#333;
+width:140px; 
+ border-radius: 8px;
+top:30%; 
+ left:23%;
+    display:none;
+    text-align: center;
+}
+     
+    
+    .notification {
+  padding:3px;  
+  margin:4px;
+ margin-bottom: 10px;
+ position: absolute;
+  color:#fff;
+  background:red;
+width:7px; 
+border-radius: 30px;
+top:28%; 
+ left:102%;
+    text-align: center;
+}
+        .cross {
+        position:absolute;
+         left:80%; 
+        font-size: 16px;
+            display:none;
+     }
+     
+     #bubble2{
+  top:40%;
+     }
+     
+     #bubble3{
+   top:51%;
+       }
+     
+     #suggestions{
+   top:22.5%;
+     background-color: deepskyblue}
+     
+   
+     
+    
+    
+   @media only screen and (max-width: 768px) {
+    
+     
+       .face {
+    width:50px;
+    height:43px;
+    top:30%; 
+     left:10%;
+   }
+ 
+.speechbubble {
+top:20%; 
+ left:-60%;
+    
+}
+         #bubble2{
+  top:35%;
+     }
+     
+      #bubble3{
+   top:50%;
+       }
+       
+      
+     }
+    
+    
+
+</style>
+
+ <meta name="viewport" content="width=device-width" /> 
+
+<div id = "parent">     
+    
+
+<img class ="face" id ="face" src="https://github.com/eltringhamej/Trackosauras-git/blob/master/trackosauras%20ori.png?raw=true"
+alt="Trackosaurus">
+ 
+
+
+<h1 id = "bubble1" class = "speechbubble" >
+Price Change
+    </h1>
+
+<h1 id = "bubble2" class = "speechbubble" >
+    
+Back in Stock
+</h1>
+
+<h1 id = "bubble3" class = "speechbubble" >
+    New Colour
+</h1>
+    
+    <h1 class ="cross">
+x
+    </h1>
+    
+    <h2 class = "notification" >
+    3
+</h2>
+    
+    
+
+
+  
+
+
+    </div>
+<body >
+    
+    
+
+ 
+        
+        
+        
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+   
+    <script>
+        
+        
+  
+        $(document).ready(function(){
+             
+             $("#face").one("click", function(){
+                 $(".notification").fadeOut();
+              $("#bubble1").delay("slow").fadeIn();
+                 $(".cross").delay("slow").fadeIn();
+    //bubble fades in
+ 
+  
+         
+         setTimeout(
+  function() 
+  { $('.speechbubble').animate({
+        'marginTop' : "-=15%" //moves down
+        });
+   $("#bubble2").delay("slow").fadeIn();
+    //bubble fades in
+  }, 2000);
+  
+  setTimeout(
+  function() 
+  { $('.speechbubble').animate({
+        'marginTop' : "-=15%" //moves down
+        });
+    $("#bubble3").delay("slow").fadeIn();
+    //bubble fades in
+  }, 4000);
+             });
+            
+   
+            $(".speechbubble,.cross").click(function(){
+                $(".speechbubble").delay("slow").fadeOut();
+                 $(".cross").delay("slow").fadeOut();
+                 });
+    });
+        
+        
+        
+</script>
+    
+    
+    
+    
+    
+    
+
+    </body>
+    
+
