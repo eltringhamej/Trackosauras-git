@@ -1,0 +1,645 @@
+
+
+<style>
+/*Google fonts*/
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,500,700');
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+body{
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    background-color: #FAFAFA;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 700;
+}
+b, strong{
+    font-weight: 500;
+}
+.brand-logo{
+    width: 180px;
+}
+.navbar{
+    min-height: 80px;
+}
+.navbar-nav .nav-item .nav-link{
+    font-weight: 500;
+}
+.navbar-brand {
+    font-weight: 700;
+}
+.navbar-inverse .navbar-nav .nav-link, .navbar .navbar-brand, .navbar-toggler span {
+    color: rgba(255,255,255,.8);
+}
+.navbar .nav-item .active, .navbar .nav-link:hover,.navbar .nav-link:focus, .navbar .navbar-brand:hover{
+    color: #fff !important;
+}
+.sticky-navigation{
+    top: 0px;
+    background-color: transparent;
+}
+.hero{
+    height: 100vh;
+    min-height: 500px;
+    padding: 100px 0;
+}
+.hero .brand{
+    margin-top: 100px;
+}
+@media (max-width: 768px){
+    .hero .brand {
+        margin-top: 0px; 
+        
+        
+        
+    }
+    
+    .vid
+    {  
+        width: 350px!important;
+        height:200px !important;
+        right: 5px;
+        bottom: 300px !important;
+        
+}
+    
+    
+}
+.store-img
+{
+    width: 170px;
+}
+.hero h1{
+    font-weight: 100;
+} 
+.hero h1 b{
+    font-weight: 700;
+} 
+a {
+    color: #1a0860;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+a:hover,
+a:focus {
+    color: #1a0860 !important;
+    outline: 0;
+    text-decoration: none !important;
+}
+section{
+    padding: 80px 0px;
+}
+.img-team{
+    width: 150px;
+    box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.15);
+    -webkit-transition: 350ms ease all;
+    transition: 350ms ease all;
+}
+.img-team:hover{
+    box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.15);
+}
+.team h5{
+    padding: 35px 0 15px 0;
+    font-weight: 500;
+}
+.team p{
+    color: #999;
+}
+.card-outline-primary{
+    border: solid 1px #1a0860;
+}
+.small-xl{
+    font-size: 90%;
+}
+.small-xs{
+    font-size: 70%;
+}
+/*===============================================
+* Background Colors
+================================================*/
+.bg-texture{
+    background: transparent -webkit-radial-gradient(circle farthest-side at right bottom, #ec407a 5%, #e91e63 25%, #1a0860 80%, #c2185b 98%) repeat scroll 0% 0%;
+    background: transparent -o-radial-gradient(circle farthest-side at right bottom, #ec407a 5%, #e91e63 25%, #1a0860 80%, #c2185b 98%) repeat scroll 0% 0%;
+    background: transparent -moz-radial-gradient(circle farthest-side at right bottom, #ec407a 5%, #e91e63 25%, #1a0860 80%, #c2185b 98%) repeat scroll 0% 0%;
+    background: transparent radial-gradient(circle farthest-side at right bottom, #1a0860 5%, #1a0860 25%, #1a0860 80%, #1a0860 98%) repeat scroll 0% 0%;
+}
+.bg-texture-collage{
+    background:-webkit-linear-gradient(-45deg, #ffb300 33%, transparent 0%),
+        linear-gradient(-45deg, #1a0860 67%, transparent 33%),
+        linear-gradient(-45deg, #ffb300 100%, transparent 67%);
+    background:-moz-linear-gradient(-45deg, #ffb300 33%, transparent 0%),
+        linear-gradient(-45deg, #1a0860 67%, transparent 33%),
+        linear-gradient(-45deg, #ffb300 100%, transparent 67%);
+    background:linear-gradient(-45deg, #1a0860 33%, transparent 0%),
+        linear-gradient(-45deg, #1a0860 67%, transparent 33%),
+        linear-gradient(-45deg,#1a0860 100%, transparent 67%);
+}
+.bg-alt {
+    background-color: #fff;
+}
+.bg-faded{
+    background-color: #FAFAFA;
+}
+.bg-primary{
+    background-color: #1a0860 !important;
+}
+.bg-footer{
+    background-color: #171717;
+}
+/*===============================================
+* Text Colors
+================================================*/
+.text-faded {
+    color: #FAFAFA;
+}
+.text-dark {
+    color: #37474F;
+}
+.text-muted{
+    color: #999 !important;
+}
+.text-white {
+    color: #fff;
+}
+.text-primary {
+    color: #07f2da !important;
+}
+.text-primary-light{
+    color: #07f2da;
+}
+
+/*===============================================
+* Icon Sizes
+================================================*/
+.icon-lg {
+    font-size: 60px;
+    line-height: 18px;
+}
+.icon-md {
+    font-size: 50px;
+    line-height: 14px;
+}
+.icon-sm {
+    font-size: 30px;
+    line-height: 14px;
+}
+/*===============================================
+* Colored Buttons
+================================================*/
+.btn{
+    box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.15);
+    -webkit-transition: 350ms ease all;
+    transition: 350ms ease all;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: .6rem 1.5rem;
+}
+.btn:hover, .btn:focus {
+    box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.15);
+}
+.btn-white {
+    color: #1a0860 !important;
+    background-color: #fff;
+    border-color: #fff;
+}
+.btn-white:hover{
+    color: #ff4081;
+}
+.btn-primary{
+    background-color: #40efdd!important;
+    border-color: #40efdd !important;
+}
+.btn-primary:hover, .btn-primary:focus{
+    color: #fff !important;
+}
+.btn-radius{
+    border-radius: 50px;
+}
+/*===============================================
+* Borders Utilities
+================================================*/
+.border-none{
+    border: none !important;
+    border-color: transparent !important;
+}
+.border-all{
+    border: 1px solid #DEE5E5 !important;
+}
+.border-left{
+    border-left: 1px solid #DEE5E5 !important;
+}
+.border-right{
+    border-right: 1px solid #DEE5E5 !important;
+}
+.border-top{
+    border-top: 1px solid #DEE5E5 !important;
+}
+.border-bottom{
+    border-bottom: 1px solid #DEE5E5 !important;
+}
+
+
+/*===============================================
+* Cards
+================================================*/
+.card{
+    border: none;
+    margin-bottom: 30px;
+}
+.card .card-block .icon-box{
+    padding: 20px 0;
+    color: #1a0860;
+}
+.card .card-block h6{
+    padding-bottom: 15px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.card:hover{
+    box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.15);
+}
+/*
+Pricing tables & lists
+*/
+.pricing-list{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.pricing-list li {
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+.list-default{
+    list-style: none;
+    padding-left: 25px;
+}
+.list-default>li {
+    position: relative;
+    padding: 6px 0;
+    line-height: 1.55em;
+    font-size: 0.94rem;
+}
+.list-default>li:before {
+    content: "\f21b";
+    position: absolute;
+    left: -25px;
+    top: 8px;
+    font-size: 10px;
+    color: #1a0860;
+    font-family: "Ionicons";
+}
+::selection {
+    color: #fff;
+    text-shadow: none;
+    background: #1a0860;
+}
+    
+.center {
+    margin: auto;
+    width: 50%;
+    
+}
+    
+
+.vid
+    {
+  margin:15px;
+ position: absolute;
+bottom: 150px;
+width: 600px;
+height:371px;
+display: none;
+}
+
+    
+</style>
+
+ <head>
+        <meta charset="utf-8">
+        <title>Trackosaurus</title>
+        <meta name="description" content="Download free Bootstrap 4 multipurpose template Comply." />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Bootstrap 4-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <!--icons-->
+        <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <!--header-->
+        <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top sticky-navigation">
+            
+            <a class="navbar-brand hero-heading" href="#">Trackosaurus</a>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <!--ul class="navbar-nav ml-auto">
+                    <li class="nav-item mr-3">
+                        <a class="nav-link page-scroll" href="#main">Sign up <span class="sr-only">(current)</span></a>
+                </ul>--> 
+            </div>
+        </nav>
+
+        <!--main section-->
+        <section class="bg-texture hero" id="main">
+            <div class="container" id="area">
+                <div class="row d-md-flex brand">
+                    <div class="col-md-6 hidden-sm-down wow fadeIn" style="Bottom:40px; right:44px;">
+                       <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg  viewBox="0 0 1040 747" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45 (43475) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-184.000000, -972.000000)">
+            <g id="Group-3" transform="translate(184.000000, 969.000000)">
+                <g id="Group-2" transform="translate(0.000000, 69.000000)">
+                    <g id="Group" fill="#50E3C2">
+                        <rect id="Rectangle-12" x="0" y="0.257414903" width="248" height="587.742585" rx="17"></rect>
+                        <rect id="Rectangle-12" x="396" y="149.794396" width="248" height="438.205604" rx="17"></rect>
+                        <rect id="Rectangle-12" x="792" y="237.171921" width="248" height="351.328079" rx="17"></rect>
+                    </g>
+                    <text id="Price-Change" font-family="HiraKakuProN-W6, Hiragino Kaku Gothic ProN" font-size="24" font-weight="500" fill="#FFFFFF">
+                        <tspan x="27.448" y="674">Price Change</tspan>
+                    </text>
+                    <text id="Free-Delivery" font-family="HiraKakuProN-W6, Hiragino Kaku Gothic ProN" font-size="24" font-weight="500" fill="#FFFFFF">
+                        <tspan x="429.228" y="676">Free Delivery</tspan>
+                    </text>
+                    <text id="Back-in-Stock" font-family="HiraKakuProN-W6, Hiragino Kaku Gothic ProN" font-size="24" font-weight="500" fill="#FFFFFF">
+                        <tspan x="826.048" y="676">Back in Stock</tspan>
+                    </text>
+                </g>
+                <text id="46%" font-family="HiraKakuProN-W3, Hiragino Kaku Gothic ProN" font-size="36" font-weight="300" fill="#FFFFFF">
+                    <tspan x="86.454" y="32">46%</tspan>
+                </text>
+                <text id="35%" font-family="HiraKakuProN-W3, Hiragino Kaku Gothic ProN" font-size="36" font-weight="300" fill="#FFFFFF">
+                    <tspan x="484.026" y="183">35%</tspan>
+                </text>
+                <text id="29%" font-family="HiraKakuProN-W3, Hiragino Kaku Gothic ProN" font-size="36" font-weight="300" fill="#FFFFFF">
+                    <tspan x="884.526" y="270">29%</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
+                    </div>
+                    <div class="col-md-6 col-sm-12 text-white wow fadeIn"  style="Top:20px; ">
+                        <h2 class="pt-4">Want to know what <b class="text-primary-light"> visitors want </b> from your site?</h2>
+                        <p class="mt-5">
+                            Trackosaurus asks your vistiors what changes to your site they would like to be notified about. When you make those changes Trackoaurus sends them a push notification. So no one misses out.
+                        </p>
+                        <p class="mt-5">
+                            <a href="#pricing" class="btn btn-primary mr-2 mb-2 page-scroll">TRY IT Now</a>
+                            <a href="#download" id="demo" class="btn btn-white mb-2 page-scroll popup">Watch Demo</a>
+                        </p>
+                        
+                
+                    </div>
+                </div>
+            </div>
+            
+
+        </section>
+        
+        <div class="center">
+        <iframe class="vid" src="https://www.youtube.com/embed/2i3nZ2wQVEE" frameborder="0" allowfullscreen></iframe>
+            
+        </div>
+
+        <!--features-->
+        <section class="bg-faded" id="features">
+            <div class="container">
+                <div class="row mb-3">
+                    <div class="col-md-6 offset-md-3 col-sm-8 offset-sm-2 col-xs-12 text-center wow fadeIn">
+                        <h2 class="text-primary">How it Works</h2>
+                        
+                    </div>
+                </div>
+                <div class="row mt-5 text-center">
+                    <div class="col-md-4 wow fadeIn">
+                        <div class="card">
+                            <div class="card-block">
+                                <div class="icon-box">
+                                   <img src="https://image.flaticon.com/icons/svg/159/159469.svg"alt="idea " style="width:50px;height:50px;" >
+                                </div>
+                                <h6>The Problem</h6>
+                                <p>
+                                   69% of Website Visitors Abandon their Cart. These visitors are interested in making a purchase but something is preventing. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 wow fadeIn">
+                        <div class="card">
+                            <div class="card-block">
+                                <div class="icon-box">
+                                    <img src="https://image.flaticon.com/icons/svg/68/68587.svg"alt="suggest " style="width:50px;height:50px;" >
+                                </div>
+                                <h6>Changes</h6>
+                                <p>
+                                    While you have ideas of how to fix this. There is no way of knowing without asking your customers. However most customers hate giving feedback.  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 wow fadeIn">
+                        <div class="card">
+                            <div class="card-block">
+                                <div class="icon-box">
+                                     <img src="https://image.flaticon.com/icons/svg/25/25360.svg"alt="suggest " style="width:50px;height:50px;" >
+                                </div>
+                                <h6>Suggestions</h6>
+                                <p>
+                                   That's why our widget allows you to suggest changes for your visitors to be notified about. They can then subscribe to the changes they want.                                                                     
+                                    
+                                    
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 wow fadeIn">
+                        <div class="card">
+                            <div class="card-block">
+                                <div class="icon-box">
+                                     <img src="https://image.flaticon.com/icons/svg/263/263135.svg"alt="suggest " style="width:50px;height:50px;" >
+                                </div>
+                                <h6>The Answers</h6>
+                                <p>
+                                    The Trackosaurus dashboard show's you the changes your visitors actually want. So you know how to increase your sales.  
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 wow fadeIn">
+                        <div class="card">
+                            <div class="card-block">
+                                <div class="icon-box">
+                                     <img src="https://image.flaticon.com/icons/svg/462/462951.svg"alt="suggest " style="width:50px;height:50px;" >
+                                </div>
+                                <h6>Action</h6>
+                                <p>
+                                   Once you have made a change you can notify the visitors who wanted it in one simple click.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 wow fadeIn">
+                        <div class="card">
+                            <div class="card-block">
+                                <div class="icon-box">
+                                     <img src="https://image.flaticon.com/icons/svg/3/3513.svg"alt="suggest " style="width:50px;height:50px;" >
+                                </div>
+                                <h6>Notification</h6>
+                                <p>
+                                    Visitors who subscribed to that change will get an instant push notification. Taking them straight to your site. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--pricing-->
+        <section class="bg-faded" id="pricing">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 offset-md-3 col-sm-8 offset-sm-2 col-xs-12 text-center">
+                        <h2 class="text-primary">Pricing</h2>
+                        <p class="lead pt-3">
+                            Our no-nonsense pricing.
+                        </p>
+                    </div>
+                </div>
+                <div class="row d-md-flex mt-4 text-center">
+                    <div class="col-sm-4 mt-4 wow fadeIn">
+                        <div class="card">
+                            <div class="card-block">
+                                <h5 class="card-title pt-4 text-orange">Basic</h5>
+                                <h3 class="card-title text-primary pt-4">FREE</h3>
+                                <p class="card-text text-muted pb-3 border-bottom">per month</p>
+                                <ul class="list-unstyled pricing-list">
+                                    <li>Free setup</li>
+                                    <li>100MB storage</li>
+                                    <li>1GB bandwidth</li>
+                                    <li>Basic support</li>
+                                </ul>
+                                <a href="#" class="btn btn-primary btn-radius">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 mt-0 wow fadeIn">
+                        <div class="card pt-4 pb-4">
+                            <div class="card-block">
+                                <h5 class="card-title pt-4 text-orange">Standard <small class="badge bg-primary small-xs">Popular</small></h5>
+                                <h3 class="card-title text-primary pt-4"><sup>$</sup> 9.99</h3>
+                                <p class="card-text text-muted pb-3 border-bottom">per month</p>
+                                <ul class="list-unstyled pricing-list">
+                                    <li>Free setup</li>
+                                    <li>5GB storage</li>
+                                    <li>Unlimited bandwidth</li>
+                                    <li>Priority support</li>
+                                </ul>
+                                <a href="#" class="btn btn-primary btn-radius">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 mt-4 wow fadeIn">
+                        <div class="card">
+                            <div class="card-block">
+                                <h5 class="card-title pt-4 text-orange">Advanced</h5>
+                                <h3 class="card-title text-primary pt-4"><sup>$</sup> 19.99</h3>
+                                <p class="card-text text-muted pb-3 border-bottom">per month</p>
+                                <ul class="list-unstyled pricing-list">
+                                    <li>Free setup</li>
+                                    <li>Unlimited storage</li>
+                                    <li>Unlimited bandwidth</li>
+                                    <li>24/7 support</li>
+                                </ul>
+                                <a href="#" class="btn btn-primary btn-radius">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </section>
+
+
+       
+
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+
+<script>
+/* 
+ Created on : Jul 4, 2017, 12:43:10 AM
+ Author     : Atta-Ur-Rehman Shah (http://attacomsian.com)
+ */
+    
+     $(document).ready(function(){
+$(function () {
+    //init 
+    init();
+    //init wow effects
+    new WOW().init();
+
+    //scroll menu
+    $(window).scroll(function () {
+        init();
+    });
+
+    //page scroll
+    $('a.page-scroll').bind('click', function (event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top - 50
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    });
+
+    //init function
+    function init() {
+        var secondFeature = $('#features').offset().top;
+        var scroll = $(window).scrollTop();
+        if (scroll >= 150) {
+            $('.sticky-navigation').css({"background-color": '#1a0860'});
+        } else {
+            $('.sticky-navigation').css({"background-color": 'transparent'});
+        }
+        if (scroll >= secondFeature - 200) {
+            $(".mobileScreen").css({'background-position': 'center top'});
+        }
+        return false;
+    }
+});
+    
+    
+            $("#demo").click(function(){
+                 $("#area").delay("fast").fadeOut();
+                $(".vid").delay("slow").fadeIn();
+                 
+                 });
+         
+         $("").click(function(){
+                $(".vid").delay("fast").fadeOut();
+                $("#area").delay("slow").fadeIn();
+                 });
+  
+        
+       });
+    
+    </script>
